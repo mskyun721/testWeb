@@ -7,6 +7,7 @@
 <title>SUNSOFT</title>
 <link href="css/default.css" rel="stylesheet" type="text/css">
 <link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/table.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -46,7 +47,7 @@ $(document).ready(function() {
 			<div id="title">
 				<h3>일정표</h3>
 			</div>
-			<div class="marginLeft_100">
+			<div id="searchBox">
 				<select id="year">
 				</select>
 				년 &nbsp;&nbsp;
@@ -55,119 +56,126 @@ $(document).ready(function() {
 				월
 			</div>
 			<div class="marginLeft_100 marginTop_10 floatLeft">
-				<table id="calTable">
+				<table class="table1100 calHeight">
 					<thead>
-						<tr><th colspan="2">Sun</th>
-							<th colspan="2">Mon</th>
-							<th colspan="2">Tues</th>
-							<th colspan="2">Wed</th>
-							<th colspan="2">Thurs</th>
-							<th colspan="2">Fir</th>
-							<th colspan="2">Sat</th></tr>
+						<tr><th>Sun</th>
+							<th>Mon</th>
+							<th>Tues</th>
+							<th>Wed</th>
+							<th>Thurs</th>
+							<th>Fir</th>
+							<th>Sat</th></tr>
 					</thead>
 					<tbody>
-						<tr><td><a href="scheduleForm.jsp" onclick="window.open(this.href,'_blank','width=350, height=250'); return false">1</a></td>
-							<td>일정</td>
+						<tr><td><a href="scheduleForm.jsp" onclick="window.open(this.href,'_blank','width=300, height=200, left=500, top=300'); return false">1</a></td>
 							<td>2</td>
-							<td>일정</td>
 							<td>3</td>
-							<td>일정</td>
 							<td>4</td>
-							<td>일정</td>
 							<td>5</td>
-							<td>일정</td>
 							<td>6</td>
-							<td>일정</td>
 							<td>7</td>
+							</tr>
+						<tr><td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
 							<td>일정</td></tr>
 						<tr><td>1</td>
-							<td>일정</td>
 							<td>2</td>
-							<td>일정</td>
 							<td>3</td>
-							<td>일정</td>
 							<td>4</td>
-							<td>일정</td>
 							<td>5</td>
-							<td>일정</td>
 							<td>6</td>
+							<td>7</td></tr>
+						<tr><td>일정</td>
 							<td>일정</td>
-							<td>7</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
 							<td>일정</td></tr>
 						<tr><td>1</td>
-							<td>일정</td>
 							<td>2</td>
-							<td>일정</td>
 							<td>3</td>
-							<td>일정</td>
 							<td>4</td>
-							<td>일정</td>
 							<td>5</td>
-							<td>일정</td>
 							<td>6</td>
+							<td>7</td></tr>
+						<tr><td>일정</td>
 							<td>일정</td>
-							<td>7</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
 							<td>일정</td></tr>
 						<tr><td>1</td>
-							<td>일정</td>
 							<td>2</td>
-							<td>일정</td>
 							<td>3</td>
-							<td>일정</td>
 							<td>4</td>
-							<td>일정</td>
 							<td>5</td>
-							<td>일정</td>
 							<td>6</td>
+							<td>7</td></tr>
+						<tr><td>일정</td>
 							<td>일정</td>
-							<td>7</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
 							<td>일정</td></tr>
 						<tr><td>1</td>
-							<td>일정</td>
 							<td>2</td>
-							<td>일정</td>
 							<td>3</td>
-							<td>일정</td>
 							<td>4</td>
-							<td>일정</td>
 							<td>5</td>
-							<td>일정</td>
 							<td>6</td>
+							<td>7</td></tr>
+						<tr><td>일정</td>
 							<td>일정</td>
-							<td>7</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
 							<td>일정</td></tr>
 						<tr><td>1</td>
-							<td>일정</td>
 							<td>2</td>
-							<td>일정</td>
 							<td>3</td>
-							<td>일정</td>
 							<td>4</td>
-							<td>일정</td>
 							<td>5</td>
-							<td>일정</td>
 							<td>6</td>
+							<td>7</td></tr>
+						<tr><td>일정</td>
 							<td>일정</td>
-							<td>7</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
+							<td>일정</td>
 							<td>일정</td></tr>
 					</tbody>
 				</table>
 			</div><!-- calTable end -->
-			<div id="scheduleForm">
+			<!-- <div id="scheduleForm">
 				<form action="">
-					<label>예정일 &nbsp;&nbsp;
-					<input type="date" name="sf_date" id="sf_date"></label><br><br>
-					<label>작성자 &nbsp;&nbsp;
-					<input type="text" name="sf_writer" id="sf_writer" width="200px"></label><br><br>
-					<label>내용 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<textarea rows="5" cols="22"></textarea></label><br><br>
+					<div class="formRow">
+						<div class="lbWidth"><label >예정일 </label></div>
+						<input type="date" name="" id="">
+					</div>
+					<div class="formRow">
+						<div class="lbWidth"><label>작성자 </label></div>
+						<input type="text" name="" id="" size="15" >
+					</div>
+					<div class="formRow">
+						<div class="lbWidth verticalTop"><label >내용</label></div>
+						<textarea rows="5" cols="25"></textarea>
+					</div>
 					<div class="buttonBox">
-						<button id="sf_save">저장</button>&nbsp;
-						<button id="sf_del">삭제</button>&nbsp;
-						<button id="sf_cancel">취소</button>
+						<button id="">저장</button>&nbsp;
+						<button id="">삭제</button>&nbsp;
+						<button id="">취소</button>
 					</div>
 				</form>
-			</div>
+			</div> -->
 			<div class="clear"></div>
 		</div><!-- row1 end -->
 	</div><!-- content end -->

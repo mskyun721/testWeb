@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>SUNSOFT</title>
 <link href="css/default.css" rel="stylesheet" type="text/css">
-<link href="css/weeklyBoardList.css" rel="stylesheet" type="text/css">
+<link href="css/table.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -43,37 +43,39 @@ $(document).ready(function() {
 	<!-- header -->
 	<div id="content">
 		<div id="row1">
-			<div id="title" class="marginLeft_100">
+			<div id="title">
 				<h3>업체 요청 조회</h3>
 			</div>
-			<div id="searchBox" class="marginRight_100">
-				<div id="button">
-					<button>검색</button>
-				</div>
-				<div id="dateSelect">
-					&nbsp;
-					<select class="year">
-					</select>
-					년 &nbsp;&nbsp;
-					<select class="month">
-					</select>
-					월<br>&nbsp;
-					<select class="year">
-					</select>
-					년 &nbsp;&nbsp;
-					<select class="month">
-					</select>
-					월
-				</div>
-				<div>
-					<button class="floatRight">조회</button>
-				</div>
-				<div id="searchCorp" class="floatRight">
-					<input type="text" width="50" size="5">&nbsp;<input type="text" size="10">
-				</div>
+			<div class="marginRight_100">
+				<form>
+					<div class="floatRight">
+						<button>검색</button>
+					</div>
+					<div id="searchBox" class="floatRight">
+						<select class="year">
+						</select>
+						년 &nbsp;
+						<select class="month">
+						</select>
+						월<br>
+						<select class="year">
+						</select>
+						년 &nbsp;
+						<select class="month">
+						</select>
+						월&nbsp;
+					</div>
+				</form>
+				<form>
+					<div class="marginLeft_100 floatLeft">
+						<br>
+						<input type="text">
+						<button>검색</button>
+					</div>
+				</form>
 			</div>
-			<div id="boardList" class="marginLeft_100">
-				<table>
+			<div class="marginLeft_100">
+				<table class="table1100">
 					<thead>
 						<tr><th>No.</th>
 							<th>날짜</th>

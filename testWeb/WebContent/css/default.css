@@ -3,9 +3,6 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
-.clear{
-	clear: both;
-}
 
 ul{
 	list-style: none;
@@ -62,7 +59,36 @@ ul{
 #row1{
 	padding: 5px;
 }
+#searchBox{
+	margin-left: 100px;
+	margin-bottom: 10px;
+}
 
+#weeklyWriteForm{
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	border: 1px solid;
+	width: 650px;
+}
+#weeklyWriteForm form{
+	padding: 10px;
+	margin-left: 10px;
+	
+}
+
+#button button{
+	height: 45px;
+	margin-bottom: 5px;
+}
+.buttonBox {text-align: center;}
+.formRow{margin: 3px;}
+/* label 라인 정렬 */
+.lbWidth{width: 65px;display: inline-block;}
+.verticalTop{vertical-align: top;}
+.verticalCenter{vertical-align: center;}
+.lbWord-break{word-break: keep-all;text-align: center;}
+/* maring 10~50, 100 */
 .margin_10{margin: 10px;}
 .marginTop_10{margin-top: 10px;}
 .marginTop_20{margin-top: 20px;}
@@ -88,10 +114,15 @@ ul{
 .marginRight_100{margin-right: 100px;}
 .marginLeft_100{margin-left: 100px;}
 .marginBottom_100{margin-bottom: 100px;}
+/* float */
 .floatLeft{float: left;}
 .floatRight{float: right;}
+.clear{clear: both;}
+.horison{
+	text-align: 
+}
 .hover_link:hover{color: red;}
-
+.subPageForm form{padding: 10px;}
 
 
 

@@ -7,6 +7,7 @@
 <title>SUNSOFT</title>
 <link href="css/default.css" rel="stylesheet" type="text/css">
 <link href="css/weeklyBoard.css" rel="stylesheet" type="text/css">
+<link href="css/table.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -43,11 +44,11 @@ $(document).ready(function() {
 	<!-- header -->
 	<div id="content">
 		<div id="row1">
-			<div id="title" class="marginLeft_100">
+			<div id="title">
 				<h3>주간 업무일지</h3>
 			</div>
 			<div class="floatLeft">
-				<div id="dateSelect">
+				<div id="searchBox">
 					<select id="year">
 					</select>
 					년 &nbsp;&nbsp;
@@ -55,8 +56,8 @@ $(document).ready(function() {
 					</select>
 					월
 				</div>
-				<div id="weeklyTaskTable">
-					<table>
+				<div class="marginLeft_100 marginTop_10">
+					<table class="table450">
 						<thead>
 							<tr><th>No.</th>
 								<th>업무기간</th>
@@ -97,25 +98,37 @@ $(document).ready(function() {
 				</div><!-- TaskTable end -->
 			</div><!-- row1_1 end -->
 			<div class="floatLeft">
-				<div class="buttonBox marginLeft_20">
-						<button id="btnSave">저장</button>&nbsp;
-						<button id="btnDel">삭제</button>&nbsp;
-						<button id="btnCancel">취소</button>
+				<div class="marginLeft_20">
+					<button id="">저장</button>&nbsp;
+					<button id="">삭제</button>&nbsp;
+					<button id="">취소</button>
 				</div>
-				<div id="weeklyWriteTask">
+				<div id="weeklyWriteForm">
 					<form>
-						<label>업무 기간</label>
-						<input type="date" name="wwt_date"> ~ <input type="date" name="wwt_date"><br>
-						<label>직급</label>
-						<input type="text" name="wwt_rank" id="wwt_rank" size="15"><br>
-						<label>이름</label>
-						<input type="text" name="wwt_writer" id="wwt_writer" size="15"><br>
-						<label>처리내용 <br>
-						<textarea rows="15" cols="80"></textarea></label><br>
-						<label>특이사항 및 수정사항<br>
-						<textarea rows="5" cols="80"></textarea></label><br>
-						<label>비고<br>
-						<textarea rows="5" cols="80"></textarea></label><br>
+						<div class="formRow">
+							<div class="lbWidth"><label>업무기간</label></div>
+							<input type="date" name="wwt_date"> ~ <input type="date" name="wwt_date">
+						</div>
+						<div class="formRow">
+							<div class="lbWidth"><label>직급</label></div>
+							<input type="text" name="wwt_rank" id="wwt_rank" size="15">
+						</div>
+						<div class="formRow">
+							<div class="lbWidth"><label>이름</label></div>
+							<input type="text" name="wwt_writer" id="wwt_writer" size="15">
+						</div>
+						<div class="formRow">
+							<div class="lbWidth verticalTop"><label>처리내용 </label></div>
+							<textarea rows="15" cols="70"></textarea>
+						</div>
+						<div class="formRow">
+							<div class="lbWidth verticalTop lbWord-break"><label>특이사항 및 수정사항</label></div>
+							<textarea rows="5" cols="70"></textarea>
+						</div>
+						<div class="formRow">
+							<div class="lbWidth verticalTop"><label>비고</label></div>
+							<textarea rows="5" cols="70"></textarea>
+						</div>
 					</form>
 				</div>
 			</div>

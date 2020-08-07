@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.table1100{
+	border: 1px solid;
+	width: 1100px;
+	text-align: center;
+}
+.table450{
+	border: 1px solid;
+	width: 450px;
+	text-align: center;
+}
+.calHeight{
+	height: 550px;
+}
+
+tr{
+	border-bottom: 1px thin;
+}
+
+th{
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+td{
+	
+}

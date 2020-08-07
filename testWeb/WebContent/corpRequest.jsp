@@ -7,6 +7,7 @@
 <title>SUNSOFT</title>
 <link href="css/default.css" rel="stylesheet" type="text/css">
 <link href="css/corpRequest.css" rel="stylesheet" type="text/css">
+<link href="css/table.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="wrap">
@@ -15,17 +16,17 @@
 	<!-- header -->
 	<div id="content">
 		<div id="row1">
-			<div id="title" class="marginLeft_100">
+			<div id="title">
 				<h3>업체 요청 사항</h3>
 			</div>
 			<div class="floatLeft">
-				<div class="marginLeft_100">
+				<div id="searchBox">
 					<form action="">
 						<input type="text" size="15">&nbsp;<button>검색</button>
 					</form>
 				</div>
-				<div class="marginLeft_100 marginTop_20">
-					<table>
+				<div class="marginLeft_100">
+					<table class="table1100">
 						<thead>
 							<tr><th>No.</th>
 								<th>날짜</th>
@@ -37,7 +38,7 @@
 								<th>완료날짜</th></tr>
 						</thead>
 						<tbody>
-							<tr onclick="window.open('RequestForm.jsp','_blank','width=640, height=780'); return false" class="hover_link">
+							<tr onclick="window.open('RequestForm.jsp','_blank','width=640, height=840'); return false" class="hover_link">
 								<td>1</td>
 								<td>yyyy-mm-dd</td>
 								<td>(주)xxxxx</td>

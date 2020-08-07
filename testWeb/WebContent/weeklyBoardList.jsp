@@ -7,6 +7,7 @@
 <title>SUNSOFT</title>
 <link href="css/default.css" rel="stylesheet" type="text/css">
 <link href="css/weeklyBoardList.css" rel="stylesheet" type="text/css">
+<link href="css/table.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -43,14 +44,14 @@ $(document).ready(function() {
 	<!-- header -->
 	<div id="content">
 		<div id="row1">
-			<div id="title" class="marginLeft_100">
+			<div id="title">
 				<h3>주간 업무일지 조회</h3>
 			</div>
-			<div id="searchBox" class="marginRight_100">
-				<div id="button">
+			<div class="marginRight_100">
+				<div id="button" class="floatRight">
 					<button>검색</button>
 				</div>
-				<div id="dateSelect">
+				<div id="searchBox" class="floatRight">
 					<select class="year">
 					</select>
 					년 &nbsp;&nbsp;
@@ -66,8 +67,8 @@ $(document).ready(function() {
 				</div>
 			</div>
 			<div class="clear"></div>
-			<div id="boardList" class="marginLeft_100">
-				<table>
+			<div class="marginLeft_100">
+				<table class="table1100">
 					<thead>
 						<tr><th>No.</th>
 							<th>업무 기간</th>

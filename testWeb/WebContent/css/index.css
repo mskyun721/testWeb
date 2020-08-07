@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-#calTable{
-	border: 1px solid;
-	width: 800px;
-	height: 500px;
-}
-
-#calTable tr{
-	border-bottom: 1px solid;
-}
-
 #scheduleForm{
 	float: left;
 	margin-top: 10px;
@@ -21,11 +11,6 @@
 	
 }
 
-label textarea{
-    vertical-align: middle;
-}
 
-.buttonBox {
-	text-align: center;
-}
+
 
